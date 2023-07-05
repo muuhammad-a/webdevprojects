@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.continer{
+    width: 100%;
+    height: 1   00vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.continer h2{
+    color: #7f977a;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-style: italic;
+    background-color: #000;
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.slider{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background-color: #ddd;
+}
+
+.slider-box{
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 8em;
+    box-sizing: border-box;
+    padding: 1.1em;
+    text-align: center;
+    background-size: cover !important;
+}
+
+
+.slider-box:nth-child(1) {
+    background: center no-repeat  url(https://images.unsplash.com/photo-1500622944204-b135684e99fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1461&q=80);
+}
+
+.slider-box:nth-child(2) {
+    background: center no-repeat  url(https://images.unsplash.com/photo-1543877087-ebf71fde2be1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+}
+
+.slider-box:nth-child(3) {
+    background:center no-repeat  url(https://images.unsplash.com/photo-1418489098061-ce87b5dc3aee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80);
+}
+
+.slider-box:nth-child(4) {
+    background: center no-repeat  url(https://images.unsplash.com/photo-1539667468225-eebb663053e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1117&q=80);
+}
+
+
+#next, #prev{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    z-index: 999;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border: none;
+    border-radius: 50%;
+}
+
+#next{
+    right: 10px;
+}
+
+#prev{
+    left: 10px;
+}
+
+.dots {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.dots span{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    color: #000;
+}
