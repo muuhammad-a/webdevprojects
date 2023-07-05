@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.continer {
+    width: 100%;
+    height: 80vh;
+    background: #f2f3f5;
+    border: 2px solid #0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-in {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    padding: 20px 10px;
+    background-color: beige;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.sign-in label {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #959595dd;
+    width: 90%;
+}
+
+.sign-in input {
+    width:300px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 5px;
+}
+
+.sign-in button {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px #000;
+    margin-top: 20px;
+    background-color: green;
+    color: #fff;
+}
+
+.sign-in button:hover {
+    color: green;
+    background-color: #fff;
+    border: 2px solid green;
+}
+
+/* space */
+.space {
+    width: 50%;
+    height: 550px;
+    padding: 20px 10px;
+    background-color: greenyellow;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: transform 500ms ease-in-out;
+}
+
+.space h1{
+    font-size: 80px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px  5px hsl(0, 0%, 0%); 
+    letter-spacing: 10px;   
+}
+
+.space p{
+    color: #fff;
+    text-shadow: 0px  0px 2px #000;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+/* login */
+
+
+.login{
+    width: 50%;
+    height: 550px;
+    border-radius: 20px;
+    background-color: beige;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login label{
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #959595dd;
+    width: 90%;
+}
+
+.login input {
+    width:300px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 5px;
+}
+
+
+
+.login button {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px #000;
+    margin-top: 20px;
+    background-color: green;
+    color: #fff;
+}
+
+.login button:hover {
+    color: green;
+    background-color: #fff;
+    border: 2px solid green;
+}
+
+
+/* btn */
+
+.btn-change{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 30px;
+}
+
+.btn-change button{
+    width: 200px;
+    height: 40px;
+    color: green;
+    border: 2px solid green;
+    font-size: 25px;
+    cursor: pointer;
+}
+.active{
+    display: flex;
+}
