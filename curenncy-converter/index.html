@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency converter | by Muhammad Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1> currency converter </h1>
+    </header>
+
+    <main class="continer">
+        <form action="#">
+            <div id="first_section">
+                <label for="first-currency">from:</label><br />
+                <select name="first-currency" id="first-currency">
+                    <option value="EUR">EURO</option>
+                    <option value="USD">USD</option>
+                    <option value="AED">United Arab Emirates Dirham</option>
+                    <option value="SYP"> Syrian Pound</option> 
+                    <option value="CHF">Swiss Franc</option>
+                    <option value="CNY">Chinese Yuan</option>
+                    <option value="GBP">British Pounds Sterling</option>
+                    <option value="INR">Indian Rupee</option>
+                    <option value="JPY">Japanese yen</option>
+                </select>
+
+                <label for="second-currency">to: </label><br />
+                <select name="second-currency" id="second-currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EURO</option>
+                    <option value="AED"> United Arab Emirates Dirham </option>
+                    <option value="SYP"> Syrian Pound</option>
+                    <option value="CHF">Swiss Franc</option>
+                    <option value="CNY">Chinese Yuan</option>
+                    <option value="GBP">British Pounds Sterling</option>
+                    <option value="INR">Indian Rupee</option>
+                    <option value="JPY">Japanese yen</option>
+                </select>
+            </div>
+
+            <div id="second_section">
+                <input type="number" placeholder="enter amount here..." id="currency" />
+                <button type="button" id="convertBtn">convert!</button>
+            </div>
+        </form>
+        
+    <div  class="result" id="result">
+        <!--  result will be shown in this section... -->
+    </div>
+    </main>
+    <footer>
+        <h6>create by Muhammad Web Developer </h6>
+        <div class="social">
+            <a href="https://www.youtube.com/@webdevelopperr"><i class="fa-brands fa-youtube" style="color: #b31919;"></i></i></a>
+            <a href="https://instagram.com/muhammad_webdeveloper"><i class="fa-brands fa-instagram" style="color: #d110ad;"></i></i></a>
+            <a href="https://www.tiktok.com/@muhammadwebdesign"><i class="fa-brands fa-tiktok" style="color: #c8c8c8;"></i></i></a>
+        </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
