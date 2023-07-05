@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+
+.header{
+    background-color: #000;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+
+.searchBox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.searchBox input{
+    width: 80%;
+    height: 40px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.searchBox button{
+    width: 15%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #292929;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+
+.weather{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.box1, .box2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+.box1 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #fff;
+    background-color: #f5ad29;
+    width: auto;
+    padding: 10px 30px;
+    height: auto;
+    border-radius: 20px;
+    text-align: center;
+    display: none;
+}
+
+.box2 h2{
+    width: 140px;
+    height: 140px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #f5ad29;
+}
+
+.description , .temp, .weather-icon{
+    width: 150px;
+    height: 150px;
+    background-color: #f5ad29;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    display: none;
+}
+
+.temp i{
+    margin-right: 10px;
+}
+.weather-icon{
+    border: 2px solid #f5ad29;
+}
+
+.weather-icon img{
+    width: 90%;
+    height: 90%;
+}
+
+
+footer{
+    background-color: #000000;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: -50% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer h6{
+    color: #ffffff9a;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    gap: 50px;
+    font-size: 30px;
+}
+
+.social a:hover{
+    transform: scale(1.1);
+}
+
+
+/* mobile settings */
+
+@media screen and (max-width:650px) {
+    .box1 h1{
+        font-size: 65px;
+    }
+    .box2{
+        flex-wrap: wrap;
+    }
+
+    .box2 h2, .box2 p, .box2 span{
+        width: 100px;
+        height: 100px;
+        font-size: 15px;
+    }
+    .searchBox button{
+        font-size: 15px;
+        letter-spacing: 0;
+
+    }
+    footer{
+        margin-bottom: -25%;
+    }
+    footer h6{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Weather App</h1>
+    </div>
+    <form class="searchBox">
+        <input type="text" id="city" placeholder="serche your city name...">
+        <button type="button" id="search"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+    </form>
+    <div class="weather">
+        <div class="box1">
+            <h1 id="cityname" class="cityname"></h1>
+        </div>
+        <div class="box2">
+            <h2 class="condition" id="condition"></h2>
+            <p class="description" id="description"></p>
+            <span class="temp" id="temp"></span>
+            <span id="weather-icon" class="weather-icon"> <img id="icon"> </span>
+        </div>
+    </div>
+<footer>
+    <h6>create by Muhammad Web Developer </h6>
+    <div class="social">
+        <a href="https://www.youtube.com/@webdevelopperr"><i class="fa-brands fa-youtube" style="color: #b31919;"></i></i></a>
+        <a href="https://instagram.com/muhammad_webdeveloper"><i class="fa-brands fa-instagram" style="color: #d110ad;"></i></i></a>
+        <a href="https://www.tiktok.com/@muhammadwebdesign"><i class="fa-brands fa-tiktok" style="color: #c8c8c8;"></i></i></a>
+    </div>
+</footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
