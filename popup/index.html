@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop up | by Muhammad Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <style>
+        .anonce{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        .popup {
+            position: fixed;
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 500px;
+            display: none;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0);
+            transition: all 500ms ease-in-out;
+        }
+
+        .pop-active {
+            top: 50%;
+            transition: all .9s ease-in-out;
+            display: block;
+        }
+
+        .popup-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .popup-inner h2 {
+            text-align: center;
+            color: green;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+
+        .popup-inner p {
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .popup-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+            background: #ff5959;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        .open-cookes {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            width: 130px;
+            height: 130px;
+        }
+
+        .open-cookes button {
+            height: 100px;
+            width: 100px;
+            font-size: 50px;
+            border-radius: 50%;
+            color: green;
+            border: 1px solid rgb(35, 43, 24);
+            background-color: #fff;
+        }
+        .btn{
+           display: flex;
+           align-items: center;
+           justify-content: space-around;
+           width: 100%;
+           height: auto;
+        }
+
+        .btn button{
+            width: 40%;
+            height: 40px;
+            border-radius: 10px;
+            color: #fff;
+            letter-spacing: 5px;
+            font-weight: 700;
+        }
+
+        .btn button:nth-child(1){
+            background-color: green;
+        }
+
+        .btn button:nth-child(2){
+            background-color: #ff5959;
+        }
+    </style>
+            <div class="anonce"></div>
+    <div class="popup">
+        <div class="popup-inner">
+            <h2>our website use cookes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, cumque accusantium. Molestiae
+                praesentium est nam suscipit voluptatem recusandae ad doloribus inventore, a iste error necessitatibus
+                quae ratione, beatae, magni corporis.</p>
+            <div class="popup-close" id="close">
+                X
+            </div>
+
+            <div class="btn">
+                <button id="accept">accept</button>
+                <button id="reject">reject</button>
+            </div>
+        </div>
+    </div>
+    <div class="open-cookes" id="open">
+        <button><i class="fa-solid fa-cookie"></i></button>
+    </div>
+
+    <script>
+        let open = document.getElementById('open');
+        let closeBtn = document.getElementById('close');
+        let accept = document.getElementById('accept');
+        let reject = document.getElementById('reject');
+        let anonce = document.querySelector('.anonce');
+        open.addEventListener('click', () => {
+            document.querySelector('.popup').classList.toggle('pop-active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            document.querySelector('.popup').classList.remove('pop-active');
+        })
+
+        accept.addEventListener('click', ()=>{
+            console.log('you accept cooke')
+            document.querySelector('.popup').classList.remove('pop-active');
+            anonce.innerHTML = 'cooke  accepted';
+            document.body.style.background= 'green';
+
+        })
+
+        reject.addEventListener('click', ()=>{
+            console.log('cooke not accepted')
+            document.querySelector('.popup').classList.remove('pop-active');
+           anonce.innerHTML = 'cooke not accepted';
+            document.body.style.background= 'red';
+        })
+    </script>
+
+</body>
+
+</html>
