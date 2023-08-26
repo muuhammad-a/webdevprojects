@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-continer{
+    margin: 50px auto;
+    width: 400px;
+    height: 500px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.8s ease; 
+}
+
+.card-continer img{
+    width: 380px;
+    height: 490px;
+    border-radius: 10px;
+}
+
+.description-card{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    height: 490px;
+    background-color: rgba(240, 248, 255, 0.645);
+    gap: 5px;
+    display: none;
+    transition: display 0.8s linear; 
+
+}
+
+.description-card h3{
+    text-transform: capitalize;
+    color: #3f3f3f;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.description-card  h4{
+    color: tomato;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.icons-card{
+    width: 390px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.icons-card i:first-child{
+    color: rgb(78, 255, 47);
+}
+.icons-card i:nth-child(2){
+    color: rgb(255, 47, 130);
+}
+.icons-card i:last-child{
+    color: rgb(61, 47, 255);
+}
+
+.description-card a{
+    text-decoration: none;
+    color: #ffffff;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #3f3f3f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.card-continer:hover{
+    width: 800px !important;
+}
+.card-continer:hover .description-card{
+    display: flex;
+    transition: all 0.8s linear; 
+
+}
