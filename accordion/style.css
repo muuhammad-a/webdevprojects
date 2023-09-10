@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.continer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    transition: all 0.5s ease;
+    margin: 20px auto;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.accordion{
+    width: 100%;
+    height: auto;
+    background-color: rgb(242, 2, 255);
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 4px;
+}
+
+.accordion h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+}
+
+
+.accordion p{
+    font-size: 20px;
+    color: #fff;
+    width: 60%;
+    height: 0;
+    transition: height 0.5s ease;
+    opacity: 0;
+}
+
+.accordion i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height:30px;
+    border-radius: 50px;
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 25px;
+    transition: all 0.5s ease;
+    background-color: blueviolet;
+}
+
+
+.active{
+    opacity: 1 !important;
+    height: 100px !important;
+    transition: height 0.5s ease;
+}
+
+
+.active-arrow{
+    transform: rotate(180deg) !important;
+}
