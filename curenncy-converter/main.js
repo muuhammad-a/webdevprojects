@@ -3,7 +3,7 @@ let secondCurrency = document.getElementById('second-currency');
 let currency = document.getElementById('currency');
 let convertBtn = document.getElementById('convertBtn');
 
-const API_KEY = `UYmmY85cVG9RoyFrdLy691hmhEA3JdEuf78aioeb`;
+const API_KEY = `add your API KEY from currencyapi.com `;
 const baseCurrency = firstCurrency.value; // Valuta di base scelta dall'utente
 const URL = `https://api.currencyapi.com/v3/latest?apikey=${API_KEY}&base_currency=${baseCurrency}`;
 
